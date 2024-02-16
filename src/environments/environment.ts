@@ -6,7 +6,7 @@ import { KeycloakConfig } from "keycloak-js";
 let keycloakConf: KeycloakConfig = {
   clientId: 'sample_keyclock_js_1',    // Your `clientId` from Keycloak Admin Console
   realm: 'master',               // Your `realm` from Keycloak Admin Console
-  url:    'https://52.169.2.6:8443'   // URL of your keycloak installation till 
+  url:    '<keycloak server url>'   // URL of your keycloak installation till 
 }
 
 export const environment = {
