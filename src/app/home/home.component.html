@@ -1,0 +1,28 @@
+<div id="home-div">
+    <div id="table-attr">
+        <table align="center">
+            <tr>
+                <th style="text-align:center;">Attributes</th>
+                <th style="text-align:center;" >Value</th>
+                <th><input type="button" value="LOGOUT" (click)="logout()" /></th>
+            </tr>
+            <tr *ngFor="let c of userObject | keyvalue">           
+                <td style="text-align:center;">{{c.key}}</td>
+                <td style="text-align:center;">{{c.value}}</td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">Access Token</td>
+                <td style="text-align:center;">
+                    <textarea id="ta-token" rows="6" cols="80">{{token}}</textarea>
+                </td>
+                <td><input type="button" value="Update Token" (click)="update()"/></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">Refresh Token</td>
+                <td style="text-align:center;">
+                    <textarea id="ta-refreshToken" rows="6" cols="80">{{refreshToken}}</textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
